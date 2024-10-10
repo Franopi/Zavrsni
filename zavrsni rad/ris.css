@@ -1,0 +1,122 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px 40px 40px 40px;
+}
+
+.row .image {
+    flex-basis: 25%;
+}
+
+.row .image img {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    border: 5px solid #219a6e;
+}
+
+.row .image1 img {
+    width: 100%;
+    height: 600px;
+    border-radius: 15px;
+    border: 5px solid #219a6e;
+}
+
+.row .about-text {
+    flex-basis: 72%;
+}
+
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    padding: 50px 0;
+}
+
+.list .pick {
+    background-color: white;
+    border-radius: 15px;
+    border: 5px solid white;
+    position: relative;
+    overflow: hidden;
+}
+
+.list .pick p {
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.list .pick h4 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.list .pick img {
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    .row .image {
+        margin: auto;
+        flex-basis: 100%;
+    }
+
+    .row .image img {
+        width: 50%;
+    }
+
+    .row .about-text {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .row .image {
+        flex-basis: 100%;
+    }
+
+    .row .image img {
+        width: 80%;
+    }
+
+    .row .about-text {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .row .image {
+        flex-basis: 100%;
+    }
+
+    .row .image img {
+        width: 80%;
+    }
+
+    .subtitle {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .row .about-text {
+        font-size: 14px;
+    }
+}

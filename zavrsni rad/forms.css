@@ -1,0 +1,57 @@
+.contact-container{
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #219a6e;
+    border-radius: 10px;
+    border:2px solid #219a6e;
+}
+
+.contact-left textarea{
+    min-height: 140px;
+    padding-top: 15px;
+    border-radius: 10px;
+    border:2px solid #219a6e;
+    z-index: 50;
+    max-width: 575px;
+    max-height: 1025px;
+}
+
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border-radius: 10px;
+    background: #219a6e;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px){
+    .contact-inputs{
+        width: 40vw;
+    }
+}

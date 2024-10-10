@@ -1,0 +1,36 @@
+.section-background {
+    background-size: cover; 
+    background-position: center; 
+    height: 750px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.large-text {
+    font-size: 2.5rem; 
+    color: white; 
+}
+
+.button-row {
+    margin-top: 20px; 
+}
+
+.button-row button {
+    padding: 10px 20px; 
+    margin: 0 10px; 
+    background-color: #219a6e; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem; 
+}
+
+.button-row button:hover {
+    background-color: #ffffff; 
+    color: #219a6e; 
+    transform: scale(1.1); 
+}
